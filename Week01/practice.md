@@ -30,3 +30,10 @@ Take one down and pass it around, no more bottles of beer on the wall.
 
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
+
+2. isPrime 쓰는 사기꾼놈들...
+
+대신 우리가 직접 def isPrime(n): 을 만들어보는 것은 어떨까요?
+
+hint1 : 소수의 정의를 생각해 봅시다
+hint2 : 나눗셈을 하는 횟수를 줄일 방법을 생각해 봅시다
