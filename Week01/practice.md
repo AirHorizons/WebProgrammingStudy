@@ -31,7 +31,15 @@ Take one down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 
-2. isPrime 쓰는 사기꾼놈들...
+2. 산을 만들었으니 이제 바다를 만들어봅시다!
+
+옛 사람들이 바다가 둥글다고 한 것이 생각이 나는군요...
+
+그래서 n을 입력받으면 반지름이 n인 원을 그려보는 것은 어떨까요?
+
+hint : 학교에서 배운 원의 공식을 생각해 봅시다!
+
+3. isPrime 쓰는 사기꾼놈들...
 
 대신 우리가 직접 def isPrime(n): 을 만들어보는 것은 어떨까요?
 
