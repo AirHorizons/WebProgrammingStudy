@@ -1,7 +1,7 @@
 i = 99
 while i> 1:
-    print(i,'bottles bottles of beer on the wall, ', i, 'bottles of beer.')
-    print('Take one down and pass it around, ', i-1, ' bottles of beer on the wall.\n\n')
+    print(i,'bottles bottles of beer on the wall,', i, 'bottles of beer.')
+    print('Take one down and pass it around,', i-1, ' bottles of beer on the wall.\n\n')
     i-=1
 print('1 bottle of beer on the wall, 1 bottle of beer.\nTake one down and pass it around, no more bottles of beer on the wall.\n')
 
