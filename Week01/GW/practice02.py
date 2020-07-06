@@ -1,6 +1,10 @@
-import turtle 
-r = int(input())
+r = int(input('반지름을 입력하시오: '))
 
-turtle.circle(r)
+for i in range(0,2*r+1):
+    for j in range(0,2*r+1):
+        if ((j-r)**2)+((i-r)**2)=<(r**2):
+            print('*', end='')
+        else:
+            print(' ', end='')
+    print()
 
-# 이건 아닌 것 같고... 하지만 반복문만으로 어떻게 원을 그리죠??? 마름모는 또 모르겠는데....
