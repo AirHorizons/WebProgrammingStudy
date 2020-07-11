@@ -1,0 +1,26 @@
+def html_tag(x):
+    def real_decorator(func):
+        def wrapper():
+            r = func()
+            print('<{0}>{1}</{0}>'.format(x,r))
+            return r
+        return wrapper
+    return real_decorator 
+
+
+a, b = input().split()
+ 
+@html_tag(a)
+@html_tag(b)
+def hello():
+    return 'Hello, world!'
+ 
+print(hello())
+
+# b, i를 넣으면 정답
+# <b><i>Hello, world!</i></b>
+# 대신
+# <i>Hello, world!</i>
+# <b>Hello, world!</b>
+# Hello, world!
+# 가 나옵니다.. 아무리 들여다봐도 이유를 모르겠네요. 과연 나의 파이썬 학습은 맞는 방향으로 가고 있는 것인지???/
