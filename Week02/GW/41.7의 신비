@@ -1,0 +1,25 @@
+def calc():
+    result = 0
+    while True:
+        expression = (yield result)
+        a,b,c = expression.split(' ')
+        if b == '+' :
+            yield int(a) + int(c)
+        elif b == '-':
+            yield int(a) - int(c)
+        elif b == '/' :
+            yield int(a) / int(c)
+        elif b == '*':
+            yield int(a) * int(c)    
+    
+expressions = input().split(', ')
+ 
+c = calc()
+next(c)
+ 
+for e in expressions:
+    print(c.send(e))
+ 
+c.close()
+
+# 스스로 이렇게 했고 해설도 이렇게 하고 있는데 정작 돌려보면 덧셈 곱셈은 멀쩡하고 뺄셈 나눗셈은 0이 나오는 기묘한 상황... 이쯤 되니 신기하기까지 하네요…
