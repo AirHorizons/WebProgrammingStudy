@@ -1,18 +1,23 @@
+"""
+Practice of iterating loop and generator by generating primes with scope
+"""
 def prime_number_generator(start, stop):
+    """
+    Generates prime number from start to stop
+    """
     num = start
     while num < stop:
-        rt = int(num**0.5)
-        isPrime = True
-        for i in range(2, rt+1):
+        root = int(num**0.5)
+        is_prime = True
+        for i in range(2, root+1):
             if num % i == 0:
-                isPrime = False
-        if isPrime:
+                is_prime = False
+        if is_prime:
             yield num
         num += 1
 
-start, stop = map(int, input().split())
- 
-g = prime_number_generator(start, stop)
+_start, _stop = map(int, input().split())
+g = prime_number_generator(_start, _stop)
 print(type(g))
-for i in g:
-    print(i, end=' ')
+for j in g:
+    print(j, end=' ')
