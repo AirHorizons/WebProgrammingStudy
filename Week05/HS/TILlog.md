@@ -7,3 +7,6 @@
 2. Machine Learning
 
 저는 요거 튜토리얼에 있는 multilayer perceptron의 응용인 autoencoder라는 것을 pytorch를 이용해 구현해보았습니다. 데이터를 자신보다 낮은 차원의 벡터에 사영했다가 복원하는 구조로 되어 있는데, 이 과정에서 원본 데이터의 손실이 필연적으로 발생하게 됩니다. 하지만 우리는 gradient descent를 배웠기 때문에 이 손실을 최소화하는 방향으로 encoder와 decoder를 짤 수 있게 되고, 이렇게 트레이닝된 모델은 input data의 핵심적인 특징을 보존하는 구조를 갖게 된다는 것이 본 모델의 골자입니다. 이번에 input data로 넣은 것은 건우쿤이 지금은 들어봤을 MNIST이고, 결과도 꽤 이쁘게 나옵니다. 다음 주까지는 음악 데이터(midi file)을 생성할 수 있는 모델로 바꾸는 것을 목표로 삼았습니다.
+
+3. Pandas Tutorial (~Chap.11)
+psycopg를 다운받는 것에 문제가 있어서 뒷부분을 몬허긴 했지만 json이나 tsv파일로 export하는 것을 확실히 배울 수 있었습니다. 이제 머신러닝 뿐이야...
