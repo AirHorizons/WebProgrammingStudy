@@ -1,0 +1,5 @@
+start = input().split(';')
+price = str(start)
+arrange = price.rjust(9).format(',')
+answer = list(arrange).sort(reverse=True)
+print(answer)
