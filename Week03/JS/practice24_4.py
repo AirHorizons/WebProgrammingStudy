@@ -5,7 +5,10 @@
 #print(filename)
 
 #심사문제
-countthe = input()
-count = countthe.count('the')
+sentence = input()
+howmanythe = sentence.split(' ')
+ for i in howmanythe == 'the'.strip('.,')
+    if i == True:
+        count + 1
 print(count)
 
